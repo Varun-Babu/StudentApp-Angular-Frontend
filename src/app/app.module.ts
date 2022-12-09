@@ -6,12 +6,17 @@ import { AppComponent } from './app.component';
 import { AddStudentsComponent } from './add-students/add-students.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ViewStudentsComponent } from './view-students/view-students.component';
 
 
 const myRoute : Routes = [
   {
     path:"",
     component:AddStudentsComponent
+  },
+  {
+    path:"view",
+    component:ViewStudentsComponent
   }
 ]
 
@@ -20,7 +25,8 @@ const myRoute : Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    AddStudentsComponent
+    AddStudentsComponent,
+    ViewStudentsComponent
   ],
   imports: [
     BrowserModule,
